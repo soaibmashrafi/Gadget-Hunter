@@ -106,12 +106,17 @@ const displayPhoneDetails= phone =>{
     phoneDetails.innerHTML = `
         <h5><b>Model:</b> ${phone.slug ? phone.slug : 'No Model Found'}</h5>
         <p> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></p>
+        <p><b>Brand:</b> ${phone.brand ? phone.brand : 'No Brand Information Found'}</p>
         <p><b>Released Date:</b> ${phone.releaseDate ? phone.releaseDate : 'No Released Date Found'}</p>
         <p><b>ChipSet:</b> ${phone.mainFeatures.chipSet ? phone.mainFeatures.chipSet : 'No ChipSet Information Found'}</p>
         <p><b>Display:</b> ${phone.mainFeatures.displaySize ? phone.mainFeatures.displaySize : 'No Display Information Found'}</p>
         <p><b>Sensors:</b> ${phone.mainFeatures.sensors ? phone.mainFeatures.sensors : 'No Sensor Information Found'}</p>
+        <p><b>Memory:</b> ${phone.mainFeatures.memory ? phone.mainFeatures.memory : 'No Memory Information Found'}</p>
         <p><b>Bluetooth:</b> ${phone.others.Bluetooth ? phone.others.Bluetooth : 'No Bluetooth Information Found'}</p>
         <p><b>USB:</b> ${phone.others.USB ? phone.others.USB : 'No USB Information Found'}</p>
+        <p><b>NFC:</b> ${phone.others.NFC ? phone.others.NFC : 'No NFC Information Found'}</p> 
+        <p><b>WLAN:</b> ${phone.others.WLAN ? phone.others.WLAN : 'No WLAN Information Found'}</p> 
+        <p><b>GPS:</b> ${phone.others.GPS ? phone.others.GPS : 'No GPS Information Found'}</p> 
 
     `;
 }
