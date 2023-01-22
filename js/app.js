@@ -111,6 +111,7 @@ const displayPhoneDetails= phone =>{
         <p><b>Display:</b> ${phone.mainFeatures.displaySize ? phone.mainFeatures.displaySize : 'No Display Information Found'}</p>
         <p><b>Sensors:</b> ${phone.mainFeatures.sensors ? phone.mainFeatures.sensors : 'No Sensor Information Found'}</p>
         <p><b>Bluetooth:</b> ${phone.others.Bluetooth ? phone.others.Bluetooth : 'No Bluetooth Information Found'}</p>
+        <p><b>USB:</b> ${phone.others.USB ? phone.others.USB : 'No USB Information Found'}</p>
 
     `;
 }
